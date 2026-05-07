@@ -25,7 +25,20 @@ jobs:
       - name: Deploy to Vercel
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG: ${{ secrets.VERCEL_ORG }}
         run: |
           # Deploy the built webviewer directory to Vercel using the provided token.
-          # Requires a repository secret named VERCEL_TOKEN with a Vercel Personal Token.
-          npx vercel --prod --confirm --name proofkit_testing --cwd webviewer --token "$VERCEL_TOKEN"
+          # Requires repository secrets:
+          # - VERCEL_TOKEN (required): a Vercel Personal Token
+          # - VERCEL_ORG (optional): your Vercel team/org slug (used as --scope)
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "Missing VERCEL_TOKEN secret. Add it in GitHub -> Settings -> Secrets and variables -> Actions." >&2
+            exit 1
+          fi
+
+          ARGS=(--prod --confirm --name proofkit_testing --cwd webviewer --token "$VERCEL_TOKEN")
+          if [ -n "$VERCEL_ORG" ]; then
+            ARGS+=(--scope "$VERCEL_ORG")
+          fi
+
+          npx vercel "${ARGS[@]}"
