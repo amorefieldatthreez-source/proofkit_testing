@@ -1,0 +1,38 @@
+name: Build and Deploy (Vercel Public)
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy-public:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.19.0
+
+      - name: Install and build webviewer
+        working-directory: webviewer
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy to Vercel (public project)
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "Missing VERCEL_TOKEN secret" >&2
+            exit 1
+          fi
+          DEPLOY_NAME="proofkit-testing-public-$(date +%s)"
+          echo "Deploying as $DEPLOY_NAME"
+          npx vercel --prod --cwd webviewer --token "$VERCEL_TOKEN" --yes --name "$DEPLOY_NAME"
