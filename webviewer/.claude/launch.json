@@ -1,0 +1,18 @@
+{
+  "configurations": [
+    {
+      "name": "Preview",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "${workspaceFolder}",
+      "autoPort": true,
+      "port": 5175
+    },
+    {
+      "name": "Typegen",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "typegen"],
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

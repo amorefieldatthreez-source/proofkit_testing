@@ -1,0 +1,20 @@
+{
+  "$schema": "https://proofkit.proof.sh/typegen-config-schema.json",
+  "config": {
+    "type": "fmdapi",
+    "path": "./src/config/schemas/filemaker",
+    "clearOldFiles": true,
+    "clientSuffix": "Layout",
+    "validator": "zod/v4",
+    "webviewerScriptName": "ExecuteDataApi",
+    "fmMcp": {
+      "enabled": true,
+      "connectedFileName": "ContactsTestingProofKit",
+      "baseUrl": "http://127.0.0.1:1365"
+    },
+    "layouts": [
+      { "layoutName": "Contact List", "schemaName": "Contacts" },
+      { "layoutName": "Contact Details", "schemaName": "Contacts" }
+    ]
+  }
+}
