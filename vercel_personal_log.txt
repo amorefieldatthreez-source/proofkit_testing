@@ -1,0 +1,28 @@
+The "--name" option is deprecated (https://vercel.link/name-flag)
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Vite
+
+Linked to amorefieldatthreez-3909s-projects/proofkit-testing-personal-1778162598 (created .vercel)
+The `name` property in vercel.json is deprecated (https://vercel.link/name-prop)
+Deploying amorefieldatthreez-3909s-projects/proofkit-testing-personal-1778162598
+Uploading [--------------------] (0.0B/87B)
+Uploading [====================] (87.0B/87B)
+Inspect: https://vercel.com/amorefieldatthreez-3909s-projects/proofkit-testing-personal-1778162598/5Saq9hZXPsR6dkrfn8e9pe5M6EXt [2s]
+Production: https://proofkit-testing-personal-1778162598-7qr9qxq2r.vercel.app [2s]
+https://proofkit-testing-personal-1778162598-7qr9qxq2r.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 29 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 51.6.1
+Building: WARNING! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+Building: Build Completed in /vercel/output [52ms]
+[2K[1A[2K[GProduction: https://proofkit-testing-personal-1778162598-7qr9qxq2r.vercel.app [7s]
+Completing...
+Aliased: https://proofkit-testing-personal-177816259.vercel.app [7s]
+Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+> Tip: Run `npx plugins add vercel/vercel-plugin` to enhance your agent experience

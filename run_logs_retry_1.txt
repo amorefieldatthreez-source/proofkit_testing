@@ -1,0 +1,225 @@
+build-and-deploy	Set up job	﻿2026-05-07T13:36:45.4030461Z Current runner version: '2.334.0'
+build-and-deploy	Set up job	2026-05-07T13:36:45.4064588Z ##[group]Runner Image Provisioner
+build-and-deploy	Set up job	2026-05-07T13:36:45.4065778Z Hosted Compute Agent
+build-and-deploy	Set up job	2026-05-07T13:36:45.4066589Z Version: 20260213.493
+build-and-deploy	Set up job	2026-05-07T13:36:45.4067620Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+build-and-deploy	Set up job	2026-05-07T13:36:45.4068704Z Build Date: 2026-02-13T00:28:41Z
+build-and-deploy	Set up job	2026-05-07T13:36:45.4069804Z Worker ID: {4f7f95e1-90c2-483a-8e50-8eb9bae325ba}
+build-and-deploy	Set up job	2026-05-07T13:36:45.4070848Z Azure Region: eastus2
+build-and-deploy	Set up job	2026-05-07T13:36:45.4071685Z ##[endgroup]
+build-and-deploy	Set up job	2026-05-07T13:36:45.4073856Z ##[group]Operating System
+build-and-deploy	Set up job	2026-05-07T13:36:45.4074814Z Ubuntu
+build-and-deploy	Set up job	2026-05-07T13:36:45.4075506Z 24.04.4
+build-and-deploy	Set up job	2026-05-07T13:36:45.4076222Z LTS
+build-and-deploy	Set up job	2026-05-07T13:36:45.4076936Z ##[endgroup]
+build-and-deploy	Set up job	2026-05-07T13:36:45.4077626Z ##[group]Runner Image
+build-and-deploy	Set up job	2026-05-07T13:36:45.4078599Z Image: ubuntu-24.04
+build-and-deploy	Set up job	2026-05-07T13:36:45.4079543Z Version: 20260413.86.1
+build-and-deploy	Set up job	2026-05-07T13:36:45.4081052Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260413.86/images/ubuntu/Ubuntu2404-Readme.md
+build-and-deploy	Set up job	2026-05-07T13:36:45.4084052Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260413.86
+build-and-deploy	Set up job	2026-05-07T13:36:45.4085548Z ##[endgroup]
+build-and-deploy	Set up job	2026-05-07T13:36:45.4087248Z ##[group]GITHUB_TOKEN Permissions
+build-and-deploy	Set up job	2026-05-07T13:36:45.4089843Z Contents: read
+build-and-deploy	Set up job	2026-05-07T13:36:45.4090697Z Metadata: read
+build-and-deploy	Set up job	2026-05-07T13:36:45.4091404Z Packages: read
+build-and-deploy	Set up job	2026-05-07T13:36:45.4092285Z ##[endgroup]
+build-and-deploy	Set up job	2026-05-07T13:36:45.4095419Z Secret source: Actions
+build-and-deploy	Set up job	2026-05-07T13:36:45.4096381Z Prepare workflow directory
+build-and-deploy	Set up job	2026-05-07T13:36:45.4556330Z Prepare all required actions
+build-and-deploy	Set up job	2026-05-07T13:36:45.4610653Z Getting action download info
+build-and-deploy	Set up job	2026-05-07T13:36:45.7336195Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+build-and-deploy	Set up job	2026-05-07T13:36:45.8695343Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+build-and-deploy	Set up job	2026-05-07T13:36:46.0599005Z Complete job name: build-and-deploy
+build-and-deploy	Checkout	﻿2026-05-07T13:36:46.1272019Z ##[group]Run actions/checkout@v4
+build-and-deploy	Checkout	2026-05-07T13:36:46.1272788Z with:
+build-and-deploy	Checkout	2026-05-07T13:36:46.1273302Z   repository: amorefieldatthreez-source/proofkit_testing
+build-and-deploy	Checkout	2026-05-07T13:36:46.1274278Z   token: ***
+build-and-deploy	Checkout	2026-05-07T13:36:46.1274665Z   ssh-strict: true
+build-and-deploy	Checkout	2026-05-07T13:36:46.1275063Z   ssh-user: git
+build-and-deploy	Checkout	2026-05-07T13:36:46.1275462Z   persist-credentials: true
+build-and-deploy	Checkout	2026-05-07T13:36:46.1275893Z   clean: true
+build-and-deploy	Checkout	2026-05-07T13:36:46.1276286Z   sparse-checkout-cone-mode: true
+build-and-deploy	Checkout	2026-05-07T13:36:46.1276748Z   fetch-depth: 1
+build-and-deploy	Checkout	2026-05-07T13:36:46.1277137Z   fetch-tags: false
+build-and-deploy	Checkout	2026-05-07T13:36:46.1277528Z   show-progress: true
+build-and-deploy	Checkout	2026-05-07T13:36:46.1277917Z   lfs: false
+build-and-deploy	Checkout	2026-05-07T13:36:46.1278278Z   submodules: false
+build-and-deploy	Checkout	2026-05-07T13:36:46.1278668Z   set-safe-directory: true
+build-and-deploy	Checkout	2026-05-07T13:36:46.1279280Z ##[endgroup]
+build-and-deploy	Checkout	2026-05-07T13:36:46.2369703Z Syncing repository: amorefieldatthreez-source/proofkit_testing
+build-and-deploy	Checkout	2026-05-07T13:36:46.2371726Z ##[group]Getting Git version info
+build-and-deploy	Checkout	2026-05-07T13:36:46.2372482Z Working directory is '/home/runner/work/proofkit_testing/proofkit_testing'
+build-and-deploy	Checkout	2026-05-07T13:36:46.2373861Z [command]/usr/bin/git version
+build-and-deploy	Checkout	2026-05-07T13:36:46.2410574Z git version 2.53.0
+build-and-deploy	Checkout	2026-05-07T13:36:46.2435034Z ##[endgroup]
+build-and-deploy	Checkout	2026-05-07T13:36:46.2448748Z Temporarily overriding HOME='/home/runner/work/_temp/37cd9625-dc23-4681-8133-943079cb9ca3' before making global git config changes
+build-and-deploy	Checkout	2026-05-07T13:36:46.2461511Z Adding repository directory to the temporary git global config as a safe directory
+build-and-deploy	Checkout	2026-05-07T13:36:46.2462710Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/proofkit_testing/proofkit_testing
+build-and-deploy	Checkout	2026-05-07T13:36:46.2493027Z Deleting the contents of '/home/runner/work/proofkit_testing/proofkit_testing'
+build-and-deploy	Checkout	2026-05-07T13:36:46.2496562Z ##[group]Initializing the repository
+build-and-deploy	Checkout	2026-05-07T13:36:46.2500521Z [command]/usr/bin/git init /home/runner/work/proofkit_testing/proofkit_testing
+build-and-deploy	Checkout	2026-05-07T13:36:46.2560222Z hint: Using 'master' as the name for the initial branch. This default branch name
+build-and-deploy	Checkout	2026-05-07T13:36:46.2561745Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build-and-deploy	Checkout	2026-05-07T13:36:46.2563573Z hint: to use in all of your new repositories, which will suppress this warning,
+build-and-deploy	Checkout	2026-05-07T13:36:46.2564405Z hint: call:
+build-and-deploy	Checkout	2026-05-07T13:36:46.2564768Z hint:
+build-and-deploy	Checkout	2026-05-07T13:36:46.2565431Z hint: 	git config --global init.defaultBranch <name>
+build-and-deploy	Checkout	2026-05-07T13:36:46.2566076Z hint:
+build-and-deploy	Checkout	2026-05-07T13:36:46.2566886Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build-and-deploy	Checkout	2026-05-07T13:36:46.2567849Z hint: 'development'. The just-created branch can be renamed via this command:
+build-and-deploy	Checkout	2026-05-07T13:36:46.2568529Z hint:
+build-and-deploy	Checkout	2026-05-07T13:36:46.2568892Z hint: 	git branch -m <name>
+build-and-deploy	Checkout	2026-05-07T13:36:46.2569320Z hint:
+build-and-deploy	Checkout	2026-05-07T13:36:46.2569898Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build-and-deploy	Checkout	2026-05-07T13:36:46.2570941Z Initialized empty Git repository in /home/runner/work/proofkit_testing/proofkit_testing/.git/
+build-and-deploy	Checkout	2026-05-07T13:36:46.2573073Z [command]/usr/bin/git remote add origin https://github.com/amorefieldatthreez-source/proofkit_testing
+build-and-deploy	Checkout	2026-05-07T13:36:46.2602302Z ##[endgroup]
+build-and-deploy	Checkout	2026-05-07T13:36:46.2603035Z ##[group]Disabling automatic garbage collection
+build-and-deploy	Checkout	2026-05-07T13:36:46.2606322Z [command]/usr/bin/git config --local gc.auto 0
+build-and-deploy	Checkout	2026-05-07T13:36:46.2634758Z ##[endgroup]
+build-and-deploy	Checkout	2026-05-07T13:36:46.2635458Z ##[group]Setting up auth
+build-and-deploy	Checkout	2026-05-07T13:36:46.2641509Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-deploy	Checkout	2026-05-07T13:36:46.2673847Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-deploy	Checkout	2026-05-07T13:36:46.2957139Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-deploy	Checkout	2026-05-07T13:36:46.2986295Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-deploy	Checkout	2026-05-07T13:36:46.3211481Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-deploy	Checkout	2026-05-07T13:36:46.3241927Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-deploy	Checkout	2026-05-07T13:36:46.3481225Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build-and-deploy	Checkout	2026-05-07T13:36:46.3516387Z ##[endgroup]
+build-and-deploy	Checkout	2026-05-07T13:36:46.3517497Z ##[group]Fetching the repository
+build-and-deploy	Checkout	2026-05-07T13:36:46.3525374Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +6e3f639346bde8d77d0c97628a10200b4eb5ba56:refs/remotes/origin/main
+build-and-deploy	Checkout	2026-05-07T13:36:46.6219392Z From https://github.com/amorefieldatthreez-source/proofkit_testing
+build-and-deploy	Checkout	2026-05-07T13:36:46.6220823Z  * [new ref]         6e3f639346bde8d77d0c97628a10200b4eb5ba56 -> origin/main
+build-and-deploy	Checkout	2026-05-07T13:36:46.6248188Z ##[endgroup]
+build-and-deploy	Checkout	2026-05-07T13:36:46.6248889Z ##[group]Determining the checkout info
+build-and-deploy	Checkout	2026-05-07T13:36:46.6250388Z ##[endgroup]
+build-and-deploy	Checkout	2026-05-07T13:36:46.6255772Z [command]/usr/bin/git sparse-checkout disable
+build-and-deploy	Checkout	2026-05-07T13:36:46.6293340Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build-and-deploy	Checkout	2026-05-07T13:36:46.6319633Z ##[group]Checking out the ref
+build-and-deploy	Checkout	2026-05-07T13:36:46.6324627Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build-and-deploy	Checkout	2026-05-07T13:36:46.6395953Z Switched to a new branch 'main'
+build-and-deploy	Checkout	2026-05-07T13:36:46.6398026Z branch 'main' set up to track 'origin/main'.
+build-and-deploy	Checkout	2026-05-07T13:36:46.6404492Z ##[endgroup]
+build-and-deploy	Checkout	2026-05-07T13:36:46.6438996Z [command]/usr/bin/git log -1 --format=%H
+build-and-deploy	Checkout	2026-05-07T13:36:46.6461684Z 6e3f639346bde8d77d0c97628a10200b4eb5ba56
+build-and-deploy	Use Node.js 20	﻿2026-05-07T13:36:46.6698500Z ##[group]Run actions/setup-node@v4
+build-and-deploy	Use Node.js 20	2026-05-07T13:36:46.6699009Z with:
+build-and-deploy	Use Node.js 20	2026-05-07T13:36:46.6699380Z   node-version: 20.19.0
+build-and-deploy	Use Node.js 20	2026-05-07T13:36:46.6699791Z   always-auth: false
+build-and-deploy	Use Node.js 20	2026-05-07T13:36:46.6700196Z   check-latest: false
+build-and-deploy	Use Node.js 20	2026-05-07T13:36:46.6700736Z   token: ***
+build-and-deploy	Use Node.js 20	2026-05-07T13:36:46.6701092Z ##[endgroup]
+build-and-deploy	Use Node.js 20	2026-05-07T13:36:46.8429958Z Attempting to download 20.19.0...
+build-and-deploy	Use Node.js 20	2026-05-07T13:36:47.3791254Z Acquiring 20.19.0 - x64 from https://github.com/actions/node-versions/releases/download/20.19.0-13838090974/node-20.19.0-linux-x64.tar.gz
+build-and-deploy	Use Node.js 20	2026-05-07T13:36:48.2225590Z Extracting ...
+build-and-deploy	Use Node.js 20	2026-05-07T13:36:48.2327289Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/d4d721ef-d6b5-4792-aa04-bde0f898d759 -f /home/runner/work/_temp/8f2c420c-da42-43dc-be2e-2e0d39b2b66a
+build-and-deploy	Use Node.js 20	2026-05-07T13:36:49.3160057Z Adding to the cache ...
+build-and-deploy	Use Node.js 20	2026-05-07T13:36:50.7910063Z ##[group]Environment details
+build-and-deploy	Use Node.js 20	2026-05-07T13:36:51.0043372Z node: v20.19.0
+build-and-deploy	Use Node.js 20	2026-05-07T13:36:51.0044877Z npm: 10.8.2
+build-and-deploy	Use Node.js 20	2026-05-07T13:36:51.0045375Z yarn: 1.22.22
+build-and-deploy	Use Node.js 20	2026-05-07T13:36:51.0046181Z ##[endgroup]
+build-and-deploy	Install and build webviewer	﻿2026-05-07T13:36:51.0197820Z ##[group]Run npm ci
+build-and-deploy	Install and build webviewer	2026-05-07T13:36:51.0198186Z ^[[36;1mnpm ci^[[0m
+build-and-deploy	Install and build webviewer	2026-05-07T13:36:51.0198396Z ^[[36;1mnpm run build^[[0m
+build-and-deploy	Install and build webviewer	2026-05-07T13:36:51.0226710Z shell: /usr/bin/bash -e {0}
+build-and-deploy	Install and build webviewer	2026-05-07T13:36:51.0227017Z ##[endgroup]
+build-and-deploy	Install and build webviewer	2026-05-07T13:36:54.2532330Z npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+build-and-deploy	Install and build webviewer	2026-05-07T13:36:55.6206454Z npm warn deprecated glob@11.1.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:01.9545375Z 
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:01.9546796Z added 647 packages, and audited 648 packages in 11s
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:01.9547320Z 
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:01.9569420Z 172 packages are looking for funding
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:01.9571947Z   run `npm fund` for details
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:01.9841461Z 
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:01.9853068Z 14 vulnerabilities (6 moderate, 8 high)
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:01.9853946Z 
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:01.9854362Z To address issues that do not require attention, run:
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:01.9854906Z   npm audit fix
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:01.9855096Z 
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:01.9855383Z Some issues need review, and may require choosing
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:01.9855945Z a different dependency.
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:01.9856212Z 
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:01.9856371Z Run `npm audit` for details.
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:02.1248233Z 
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:02.1248942Z > webviewer@0.0.0 build
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:02.1249427Z > vite build
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:02.1249619Z 
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:02.4688611Z ^[[36mvite v7.3.3 ^[[32mbuilding client environment for production...^[[36m^[[39m
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:02.5371825Z transforming...
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:05.2773671Z ^[[32m✓^[[39m 1997 modules transformed.
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:05.5024864Z rendering chunks...
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:05.5121924Z [plugin vite:singlefile] 
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:05.5122311Z 
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:05.5123769Z [plugin vite:singlefile] Inlining: index-Bvg-F_BF.js
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:05.5129555Z [plugin vite:singlefile] Inlining: style-mUU_0ndP.css
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:05.5171613Z computing gzip size...
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:05.5323880Z ^[[2mdist/^[[22m^[[32mindex.html  ^[[39m^[[1m^[[2m419.25 kB^[[22m^[[1m^[[22m^[[2m │ gzip: 127.83 kB^[[22m
+build-and-deploy	Install and build webviewer	2026-05-07T13:37:05.5324907Z ^[[32m✓ built in 3.03s^[[39m
+build-and-deploy	Deploy to Vercel	﻿2026-05-07T13:37:05.5963274Z ##[group]Run # Deploy the built webviewer directory to Vercel using the provided token.
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5964180Z ^[[36;1m# Deploy the built webviewer directory to Vercel using the provided token.^[[0m
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5964594Z ^[[36;1m# Requires repository secrets:^[[0m
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5964913Z ^[[36;1m# - VERCEL_TOKEN (required): a Vercel Personal Token^[[0m
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5965348Z ^[[36;1m# - VERCEL_ORG (optional): your Vercel team/org slug (used as --scope)^[[0m
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5965751Z ^[[36;1mif [ -z "$VERCEL_TOKEN" ]; then^[[0m
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5966209Z ^[[36;1m  echo "Missing VERCEL_TOKEN secret. Add it in GitHub -> Settings -> Secrets and variables -> Actions." >&2^[[0m
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5966688Z ^[[36;1m  exit 1^[[0m
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5966874Z ^[[36;1mfi^[[0m
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5967037Z ^[[36;1m^[[0m
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5967389Z ^[[36;1mARGS=(--prod --confirm --name proofkit_testing --cwd webviewer --token "$VERCEL_TOKEN")^[[0m
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5968070Z ^[[36;1mif [ -n "$VERCEL_ORG" ]; then^[[0m
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5968359Z ^[[36;1m  ARGS+=(--scope "$VERCEL_ORG")^[[0m
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5968607Z ^[[36;1mfi^[[0m
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5968807Z ^[[36;1m^[[0m
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5968991Z ^[[36;1mnpx vercel "${ARGS[@]}"^[[0m
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5992127Z shell: /usr/bin/bash -e {0}
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5992373Z env:
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5992959Z   VERCEL_TOKEN: ***
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5993152Z   VERCEL_ORG: 
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:05.5993337Z ##[endgroup]
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:06.2350794Z npm warn exec The following package was not found and will be installed: vercel@53.2.0
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:19.0441011Z npm warn deprecated tar@7.5.7: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:21.5793292Z > NOTE: The Vercel CLI now collects telemetry regarding usage of the CLI.
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:21.5794472Z > This information is used to shape the CLI roadmap and prioritize features.
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:21.5795600Z > You can learn more, including how to opt-out if you'd not like to participate in this program, by visiting the following URL:
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:21.5796507Z > https://vercel.com/docs/cli/about-telemetry
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:21.6250170Z WARNING! `--confirm` is deprecated, please use `--yes` instead
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:21.6574494Z The "--name" option is deprecated (https://vercel.link/name-flag)
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:21.6684489Z Loading scopes…
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:21.9486807Z Searching for existing projects…
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:22.1817379Z Linked to amorefieldatthreez-3909s-projects/proofkit-testing (created .vercel)
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:22.1818491Z The `name` property in vercel.json is deprecated (https://vercel.link/name-prop)
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:22.1980120Z Deploying amorefieldatthreez-3909s-projects/proofkit-testing
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:23.4401005Z Inspect: https://vercel.com/amorefieldatthreez-3909s-projects/proofkit-testing/12nGgsiLgCJxtiAtbVLifnVoSMHg [1s]
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:23.4402706Z Production: https://proofkit-testing-aqn8e4cm1-amorefieldatthreez-3909s-projects.vercel.app [1s]
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:23.4406092Z Building...
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:24.9957489Z Building...
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:27.2357673Z Building: Running build in Washington, D.C., USA (East) – iad1
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:27.2358534Z Building: Build machine configuration: 2 cores, 8 GB
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:27.2359164Z Building: Retrieving list of deployment files...
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:27.2359747Z Building: Downloading 27 deployment files...
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:28.6185600Z Building: Restored build cache from previous deployment (FVBwxaXwiVxNkSRrMTGdLMuP86bP)
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:28.6186473Z Building: Running "vercel build"
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:28.9201038Z ^[[2K^[[1A^[[2K^[[GProduction: https://proofkit-testing-aqn8e4cm1-amorefieldatthreez-3909s-projects.vercel.app [7s]
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:28.9202027Z Completing...
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:28.9202529Z Aliased: https://proofkit-testing.vercel.app [7s]
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:29.1899703Z Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+build-and-deploy	Deploy to Vercel	2026-05-07T13:37:29.4321537Z https://proofkit-testing-aqn8e4cm1-amorefieldatthreez-3909s-projects.vercel.app
+build-and-deploy	Post Use Node.js 20	﻿2026-05-07T13:37:29.4411728Z Post job cleanup.
+build-and-deploy	Post Checkout	﻿2026-05-07T13:37:29.6241565Z Post job cleanup.
+build-and-deploy	Post Checkout	2026-05-07T13:37:29.7278318Z [command]/usr/bin/git version
+build-and-deploy	Post Checkout	2026-05-07T13:37:29.7319615Z git version 2.53.0
+build-and-deploy	Post Checkout	2026-05-07T13:37:29.7364298Z Temporarily overriding HOME='/home/runner/work/_temp/078eab4d-c322-476d-b706-c0838e5795d1' before making global git config changes
+build-and-deploy	Post Checkout	2026-05-07T13:37:29.7366106Z Adding repository directory to the temporary git global config as a safe directory
+build-and-deploy	Post Checkout	2026-05-07T13:37:29.7370374Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/proofkit_testing/proofkit_testing
+build-and-deploy	Post Checkout	2026-05-07T13:37:29.7417889Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-deploy	Post Checkout	2026-05-07T13:37:29.7452641Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-deploy	Post Checkout	2026-05-07T13:37:29.7711505Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-deploy	Post Checkout	2026-05-07T13:37:29.7736057Z http.https://github.com/.extraheader
+build-and-deploy	Post Checkout	2026-05-07T13:37:29.7755644Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build-and-deploy	Post Checkout	2026-05-07T13:37:29.7785668Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-deploy	Post Checkout	2026-05-07T13:37:29.8033576Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-deploy	Post Checkout	2026-05-07T13:37:29.8075163Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-deploy	Complete job	﻿2026-05-07T13:37:29.8605213Z Cleaning up orphan processes
+build-and-deploy	Complete job	2026-05-07T13:37:29.8907130Z Terminate orphan process: pid (2438) (node)
+build-and-deploy	Complete job	2026-05-07T13:37:29.8926159Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/setup-node@v4. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
