@@ -1,0 +1,31 @@
+name: Deploy to Vercel
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install and build webviewer
+        working-directory: ./webviewer
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy to Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          # Deploy the built webviewer directory to Vercel using the provided token.
+          # Requires a repository secret named VERCEL_TOKEN with a Vercel Personal Token.
+          npx vercel --prod --confirm --name proofkit_testing --cwd webviewer --token "$VERCEL_TOKEN"
